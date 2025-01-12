@@ -13,7 +13,7 @@ This module allows to modify proxmox ve cluster note.
 
 ```hcl
 module "cluster-note" {
-  source       = "./modules/pve-cluster-notes"
+  source       = "github.com/deinsone/terraform-pve-cluster-note.git"
   cluster-note = file("./cluster-note.md")
 
   pve-endpoint = local.pve-endpoint
